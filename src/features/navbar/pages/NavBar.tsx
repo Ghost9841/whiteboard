@@ -1,13 +1,11 @@
 import { Settings, Share, Share2, ZoomIn, ZoomOut } from "lucide-react"
-import { Button } from "./ui/button"
-import { useState } from "react";
+import { Button } from "../../../components/ui/button"
 import logo from '@/assets/logo.jpg';
-import { TabsList, TabsTrigger, Tabs, } from "./ui/tabs";
+import { TabsList, TabsTrigger, Tabs, } from "../../../components/ui/tabs";
+import type { NavbarProps } from "../types/types";
 
-const NavBar = () => {
-    const [isCanvasOpen, setIsCanvasOpen] = useState(true);
-    const [isDocsOpen, setIsDocsOpen] = useState(false);
-    const [zoom, setZoom] = useState(100);
+const NavBar = ({isCanvasOpen,isDocsOpen,zoom,setIsCanvasOpen,setIsDocsOpen,setZoom}: NavbarProps) => {
+    
     return (
         <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2">

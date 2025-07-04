@@ -1,9 +1,9 @@
-import NavBar from "./components/NavBar";
+import Layout from "./store/Layout";
 
 function App() {
   return (
     <>
-    <NavBar/>
+    <Layout/>
       <h1>Hello World</h1>
     </>
   )
